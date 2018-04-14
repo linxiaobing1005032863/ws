@@ -1,0 +1,83 @@
+$headerBg:#eff6fc;
+$fontSize:#333333;
+.c-header {
+  .el-menu--horizontal>.el-menu-item {
+    height:40px;
+    line-height: 40px;
+    background-color: $headerBg;
+  }
+  .el-menu--horizontal>.el-menu-item:not(.is-disabled):hover {
+    background-color:$headerBg;
+    color:$fontSize;
+  }
+  .el-menu-item {
+    padding:0 11px;
+  }
+}
+.c-search {
+  .el-form-item {
+    margin-bottom: 5px;
+  }
+  .el-input {
+    width:150px;
+  }
+}
+/* element */
+.el-menu--horizontal>.el-menu-item.is-active {
+  color:$fontSize;
+}
+
+/* dialog */
+.el-dialog {
+  border-radius: 4px;
+  .el-dialog__header {
+    background-color: $headerBg;
+    border-radius: 4px 4px 0 0 ;
+    height: 50px;
+    display: flex;
+    padding: 0 20px;
+    align-items: center;
+    .el-dialog__title {
+      font-size: 16px;
+      color:$fontSize;
+    }
+  }
+}
+/* table */
+.el-table {
+  border-radius: 4px;
+  .el-table__header-wrapper,.el-table__fixed-header-wrapper {
+      tr {
+        height: 52px;
+      }
+  }
+  .el-table__body-wrapper,.el-table__fixed-body-wrapper {
+    .el-table__row {
+      height: 52px;
+    }
+  }
+  /* 行警告高亮颜色 */
+  .warning-row {
+    background: #F56C6C;
+  }
+  .tow-monts{
+    background:#8ec68e;
+  }
+}
+
+
+.el-table th {
+  background-color: $headerBg !important;
+  .cell {
+    color:$fontSize;
+  }
+}
+// 修改表格上下内边距
+.el-table td, .el-table th {
+  padding: 1px 0;
+}
+
+//设置侧边栏方向
+.el-submenu__icon-arrow {
+  right: 10px !important;
+}

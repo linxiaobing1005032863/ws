@@ -1,0 +1,93 @@
+body, div, header, footer, nav, section, aside, article, ul, dl, dt, dd, li, a, p, h1, h2, h3, h4,h5, i, b, textarea, button, input, select  {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-style: normal;
+    text-decoration: none;
+    border: none;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color:transparent;
+    &:focus {
+        outline: none;
+    }
+}
+
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: "Microsoft YaHei";
+    color: #666666;
+}
+
+.clear:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.clear{
+    zoom:1;
+}
+
+.back_img{
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.margin{
+    margin: 0 auto;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float:right;
+}
+
+.hide{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+.test:hover{
+  background-color: red;
+}
+
+//ali淘宝图标库
+@font-face {font-family: "iconfont";
+  src: url('./assets/fonts/iconfont.eot?t=1521186272411'); /* IE9*/
+  src: url('./assets/fonts/iconfont.eot?t=1521186272411#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('./assets/fonts/iconfont.woff?t=1521186272411') format('woff'),
+  url('./assets/fonts/iconfont.ttf?t=1521186272411') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('./assets/fonts/iconfont.svg?t=1521186272411#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-base:before { content: "\e66b"; }//基础
+
+.icon-contract:before { content: "\e644"; }//合同
+
+.icon-cangku:before { content: "\e629"; }//仓库
+
+.icon-xitong:before { content: "\e60e"; }//系统
+
+.icon-user:before { content: "\e607"; }//用户
+
+.icon-web-icon:before { content: "\e6dd"; }//报表
+
+.icon-sousuo:before { content: "\e61a"; }//搜索
+
+.icon-dyiot:before { content: "\e7a4"; }//物联网
+
+.icon-jindu:before { content: "\e63f"; }//作业进度
